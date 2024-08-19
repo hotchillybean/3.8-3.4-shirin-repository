@@ -1,0 +1,164 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+a{
+  padding-right:30px; 
+}
+
+h1.one{
+  color:white;
+  text-type:bold;
+  font-family:cormorant;
+  font-size:50px;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+h1.two{
+  color:white;
+  text-type:bold;
+  font-family:cormorant;
+  font-size:50px;
+  text-align:right;
+  padding-left:5px;
+  padding:right:5px;
+}
+
+h1.grid-item1{
+  font-size:100px;
+}
+h2{
+  color:white;
+  font-family:bentham;
+}
+h2.div.grid-item2{
+  color:black;
+}
+
+h3.container{
+  font-size:25px;
+  font-family:bentham;
+  padding:10px;
+  text-align:center;
+}
+
+p{
+  font-family:bentham;
+  text-align:left;
+  font-size:20px;
+  padding:10px;
+}
+
+.container{
+  display:grid;
+  border:1px solid;
+  grid-template:5000px/2000px/auto/2000px;
+  background-color:ivory;
+}
+
+
+#bannerimg1{
+  width:200px;
+  height:200px;
+}
+#bannerimg2{
+  width:200px;
+  height:200px;
+}
+
+#tokyo-room1{
+  width:400px;
+  height:400px;
+  margin:10px;
+  border:2px solid;
+  transition: filter 1s;
+}
+
+#tokyo-room2{
+  width:300px;
+  height:300px;
+  margin:10px;
+  border:2px solid;
+  transition: filter 1s;
+}
+#osaka-room1{
+  width:200px;
+  height:200px;
+  margin:10px;
+   border:2px solid;
+  transition: filter,height 2s;
+}
+#osaka-room2{
+  width:100px;
+  height:100px;
+  margin:10px;
+  border:2px solid;
+  transition: filter,height 2s;
+}
+#osaka-room1:hover{
+  height:250px;
+  width:250px;
+}
+#osaka-room2:hover{
+  height:200px;
+  width:200px;
+}
+
+
+ img:hover{
+   filter:brightness(70%);
+ }
+
+.header{
+  border:1px solid;
+  background-image:url("images/aj-McsNra2VRQQ-unsplash.jpg");
+  background-size:auto;
+}
+
+/***code for responsive navbar***/
+
+.navbar{
+  border: 1px solid;
+  width:150%;
+  background-color:#B56E64;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #d2bcbc;
+}
+
+.navbar a.active{
+  background-color: #7c5f71;
+  text-decoration:underline;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.grid-item1{
+  grid-area:1/1/auto/span 2;
+  align-text:center;
+}
+.grid-item2{
+  grid-area:2/1;
+}
+
+.footer{
+  grid-area:6/-1/auto/span 3;
+  background-color:#B56E64;
+}
