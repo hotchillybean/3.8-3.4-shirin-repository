@@ -13,6 +13,7 @@ h1.one{
   font-size:50px;
   padding-left:5px;
   padding-right:5px;
+  text-align:center;
 }
 
 h1.two{
@@ -20,7 +21,7 @@ h1.two{
   text-type:bold;
   font-family:cormorant;
   font-size:50px;
-  text-align:right;
+  text-align:center;
   padding-left:5px;
   padding:right:5px;
 }
@@ -31,12 +32,13 @@ h1.grid-item1{
 h2{
   color:white;
   font-family:bentham;
+  text-align:center;
 }
 h2.div.grid-item2{
   color:black;
 }
 
-h3.container{
+h3.container{ 
   font-size:25px;
   font-family:bentham;
   padding:10px;
@@ -45,7 +47,7 @@ h3.container{
 
 p{
   font-family:bentham;
-  text-align:left;
+  text-align:center;
   font-size:20px;
   padding:10px;
 }
@@ -59,12 +61,12 @@ p{
 
 
 #bannerimg1{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 #bannerimg2{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 
 #tokyo-room1{
@@ -115,6 +117,14 @@ p{
   background-image:url("images/aj-McsNra2VRQQ-unsplash.jpg");
   background-size:auto;
 }
+div.contact-details{
+  width:700px;
+  height:300px;
+}
+.footer-image{
+   display:inline-block;
+   vertical-align: middle;
+}
 
 /***code for responsive navbar***/
 
@@ -122,6 +132,7 @@ p{
   border: 1px solid;
   width:150%;
   background-color:#B56E64;
+  font-style:commorant;
   overflow: auto;
 }
 
@@ -141,6 +152,7 @@ p{
 .navbar a.active{
   background-color: #7c5f71;
   text-decoration:underline;
+   font-style:commorant;
 }
 
 @media screen and (max-width: 600px) {

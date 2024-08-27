@@ -13,6 +13,7 @@ h1.one{
   font-size:50px;
   padding-left:5px;
   padding-right:5px;
+  text-align:center;
 }
 
 h1.two{
@@ -20,7 +21,7 @@ h1.two{
   text-type:bold;
   font-family:cormorant;
   font-size:50px;
-  text-align:right;
+  text-align:center;
   padding-left:5px;
   padding:right:5px;
 }
@@ -30,11 +31,10 @@ h1.grid-item1{
 }
 h2{
   color:white;
-  font-family:bentham;
+  font-family:cormorant;
+  text-align:center;
 }
-h2.div.grid-item2{
-  color:black;
-}
+
 
 h3{
   font-size:60px;
@@ -47,14 +47,17 @@ p{
   font-size:20px;
 }
 
+p.footer{
+  text-align:center;
+}
 
 #bannerimg1{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 #bannerimg2{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 
 #cherryBlossom{
@@ -84,15 +87,12 @@ p{
 
 #sticker{
   margin:auto;
-  align-item:center;
+  align-item:right;
 }
  img:hover{
    filter:brightness(70%);
  }
 
-.footer-image{
-  align-content:center;
-}
 
 .header{
   border:1px solid;
@@ -107,7 +107,7 @@ p{
   border: 1px solid;
   width:150%;
   background-color:#b56e64;
-  font-style:commorant;
+  font-style:cormorant;
   overflow: auto;
 }
 
@@ -115,6 +115,7 @@ p{
   float: left;
   text-align: center;
   padding: 20px;
+  padding-left:50px;
   color: white;
   text-decoration: none;
   font-size: 17px;
@@ -165,15 +166,23 @@ p{
 .footer{
   grid-area:6/-1/auto/span 3;
   background-color:#B56E64;
+  display:grid;
 }
-footer.li{
+li.footer{
   color:white;
 }
 
+div.footer-details{
+  width:500px;
+  height:300px;
+}
 .footer-image{
+  width:500px;
+  height:350px;
+  display:inline-block;
+  vertical-align: middle;
   align-items:center;
 }
-
 
 
 /***mobile device display***/

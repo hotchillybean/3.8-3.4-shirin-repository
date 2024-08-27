@@ -13,6 +13,7 @@ h1.one{
   font-size:50px;
   padding-left:5px;
   padding-right:5px;
+  text-align:center;
 }
 
 h1.two{
@@ -20,7 +21,7 @@ h1.two{
   text-type:bold;
   font-family:cormorant;
   font-size:50px;
-  text-align:right;
+  text-align:center;
   padding-left:5px;
   padding:right:5px;
 }
@@ -31,6 +32,7 @@ h1.grid-item1{
 h2{
   color:white;
   font-family:bentham;
+  text-align:center;
 }
 h2.div.grid-item2{
   color:black;
@@ -49,12 +51,12 @@ p{
 
 
 #bannerimg1{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 #bannerimg2{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
 }
 
 #torotoro{
@@ -88,7 +90,7 @@ table{
    font-size:14px;
    margin:15px;
    background-color:white;
-   align:left; 
+   align-item:center; 
  }
 
 .importantDate{
@@ -98,6 +100,15 @@ table{
 .importantHeading{
   background-color:#b3b3df;
 }
+footer-details{
+  width:700px;
+  height:300px;
+}
+
+.footer-image{
+ display:inline-block;
+  vertical-align: middle;
+}
 
 /***code for responsive navbar***/
 
@@ -105,6 +116,7 @@ table{
   border: 1px solid;
   width:150%;
   background-color:#B56E64;
+  font-style:commorant;
   overflow: auto;
 }
 
@@ -123,7 +135,9 @@ table{
 
 .navbar a.active{
   background-color: #7c5f71;
+   font-style:commorant;
   text-decoration:underline;
+  
 }
 
 @media screen and (max-width: 600px) {
