@@ -1,4 +1,5 @@
-html {
+
+html{
   height: 100%;
   width: 100%;
 }
@@ -8,37 +9,39 @@ a{
 
 h1.one{
   color:white;
-  text-type:bold;
-  font-family:cormorant;
+  font-family: cormorant;
   font-size:50px;
-  padding-left:5px;
-  padding-right:5px;
   text-align:center;
+  background-color: rgba(181, 110, 100, 0.5);
+  display:inline-block;
+  margin-left:25%;
 }
+
 
 h1.two{
   color:white;
-  text-type:bold;
-  font-family:cormorant;
+  font-family: cormorant;
   font-size:50px;
   text-align:center;
-  padding-left:5px;
-  padding:right:5px;
+  background-color: rgba(181, 110, 100, 0.5);
+  display:inline-block;
+  margin-left:25%;
 }
 
 h1.grid-item1{
   font-size:100px;
 }
+
 h2{
   color:white;
-  font-family:cormorant;
   text-align:center;
+  font-family:bentham;
 }
 
 
 h3{
   font-size:60px;
-  font-family:bentham;
+  font-family:cormorant;
 }
 
 p{
@@ -74,21 +77,16 @@ p.footer{
 }
 
 #schoolImg{
-  width:300px;
-  height:300px;
+  width:400px;
+  height:400px;
   transition:filter, height 2s;
   padding:15px;
 }
 
-#schoolImg:hover{
-  height:400px;
-  width:400px;
-}
-
 #sticker{
   margin:auto;
-  align-item:right;
 }
+
  img:hover{
    filter:brightness(70%);
  }
@@ -105,9 +103,9 @@ p.footer{
 
 .navbar{
   border: 1px solid;
-  width:150%;
+  width:100%;
   background-color:#b56e64;
-  font-style:cormorant;
+  font-family:cormorant;
   overflow: auto;
 }
 
@@ -129,17 +127,64 @@ p.footer{
   background-color: #7c5f71;
   text-decoration:underline;
 }
-
+@media screen and (min-width: 600px){
+.topnav{
+  display:none;
+}
+}
 @media screen and (max-width: 600px) {
-  .navbar a {
-    float: none;
+
+  .navbar{
+    display:none;
+  }
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color:black;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    border: 1px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
     display: block;
   }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #a89999;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color:#b56e64;
+    color: white;
+  }
+
 }
+
 .container{
   display:grid;
   border:1px solid;
-  grid-template:5000px/2000px/auto/2000px;
   background-color:ivory;
 }
 
@@ -150,7 +195,7 @@ p.footer{
 
 .grid-item2{
   grid-area:2/2/auto;
-  padding:15px;
+  padding:10px;
 }
 
 .grid-item3{
@@ -161,36 +206,32 @@ p.footer{
 
 .grid-item4{
   grid-area:3/2;
+  padding:10px;
 }
 
+
 .footer{
-  grid-area:6/-1/auto/span 3;
   background-color:#B56E64;
-  display:grid;
 }
 li.footer{
   color:white;
 }
 
-div.footer-details{
-  width:500px;
-  height:300px;
-}
 .footer-image{
   width:500px;
   height:350px;
   display:inline-block;
   vertical-align: middle;
-  align-items:center;
+  padding:5px;
 }
 
 
 /***mobile device display***/
 @media screen and (max-width :600px) {
 
-  .container{
+  body{
     display:inline-grid;
-    width:700px;
+    width:100%;
   }
  
   div.grid-item1{
@@ -216,18 +257,10 @@ div.footer-details{
     font-size:75px;
   }
   p{
-    font-size:30px;
+    font-size:25px;
   }
 
-  div.header{
-    width:700px;
-  }
-
-  div.footer{
-    grid-area:5/auto;
-    width:700px;
-  }
-
+  
     #bannerimg1{
      display:none;
     }
@@ -238,6 +271,12 @@ div.footer-details{
     #schoolImg{
        display:none;
     }
- 
+  h1.one{
+    margin-left:15%;
+  }
+  h1.two{
+    margin-left:15%;
+  }
 }
+
   

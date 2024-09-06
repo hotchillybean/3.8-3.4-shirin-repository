@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title> Shirin 3.4 asessment</title>
-
-
-  <link href="accomodation.css"rel="stylesheet"type="text/css"/> 
+   <script src="script.js"></script>
+   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="accomodation.css" rel="stylesheet" type="text/css"/> 
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 
@@ -30,14 +30,14 @@
 
       <h1 class="one"> <b>Hutt Valley High School
       </b>
-        <img id="bannerimg1" src="images/hvhs.jpg" class="w3-circle">
+        <img id="bannerimg1" src="images/hvhs.jpg" class="w3-circle" alt="hvhs-logo">
       </h1>
 
       <h1 class="two"> 
         <b>
         Suginami High School
           </b>
-        <img id="bannerimg2" src="images/suginami.png">
+        <img id="bannerimg2" src="images/suginami.png" alt="sunigami-logo" >
       </h1>
 
       <h2> 
@@ -47,14 +47,13 @@
           </b>
         </u>
       </h2>
-  </div> <!---Closing header tag--->
+  </div> <!---Closing header tag-->
 
 
       <div class="navbar" id="topNav">
 
         <a href="index.html">
-          <i class="fa fa-home" aria-
-            hidden="false" >
+          <i class="fa fa-home">
             </i>
           Home</a>
 
@@ -71,14 +70,40 @@
     Accomodation</a>
   </div> 
 
+  <!-- Top Navigation Menu for mobile devices-->
+  <div class="topnav"> 
+    <a href="#accomodation" class="active">Accomodation <i class="fa fa-bed">
+      </i></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html"> <i class="fa fa-home">
+          </i>Home</a>
+      <a href="plan.html"> <i class="fa fa-clipboard">
+          </i>Plan/Itinerary</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  
   <div class="container">
     <div class="grid-item1">
-      <h3 class="container"> <b> <u>Tokyo and Shin Osaka Youth Hostel</b></u></h3>
-      <img id="tokyo-room1" src="images/you2.jpg">
-      <img id="tokyo-room2" src="images/you4.jpg">
-      <img id="osaka-room1" src="images/dorm-7-1.jpg">
-      <img id="osaka-room2" src="images/twinroom-1-1024x768.jpg">
+      <h3 class="container"> 
+        <b>
+          <u>
+          Tokyo and Shin Osaka Youth Hostel
+          </u>
+         </b>
+      </h3>
+      <img id="tokyo-room1" src="images/you2.jpg" alt="tokyo-bunk-room">
+      <img id="tokyo-room2" src="images/you4.jpg" alt="tokyo-bunk-room">
+      <img id="osaka-room1" src="images/dorm-7-1.jpg"
+        alt="osaka-bunk-room">
+      <img id="osaka-room2" src="images/twinroom-1-1024x768.jpg" alt="osaka-twin-room">
     </div>
+    <!---closing grid 1 tag-->
 <div class="grid-item2">
   <p>
     Located in the bustling heart of Tokyo, the Tokyo Central Youth Hostel ( see two pictures on the left) stands as a vibrant hub for travelers seeking affordability and community immersion. Situated within easy reach of major attractions such as the iconic Senso-ji Temple and the vibrant streets of Shibuya, this hostel offers convenience paired with a lively atmosphere. When stopping over in Osaka for three nights we will stay at the Shin-Osaka youth hostel (see two pictures on the right). Nestled in the vibrant cityscape of Osaka, the Shin-Osaka Youth Hostel offers budget-conscious travelers a comfortable and convenient accommodation option. Situated in close proximity to Shin-Osaka Station, a major transportation hub, this hostel provides easy access to the city's renowned attractions and beyond. Both hostels provide a range of accommodation options and bonuses, from
@@ -92,45 +117,59 @@
    <p>
     catering to diverse needs and budgets. Guests have ample opportunities to connect with fellow travelers from around the world. The staff at Tokyo Central Youth Hostel and Shin Osaka are renowned for their warm hospitality and local knowledge, readily assisting guests with travel tips and recommendations. 
 </p>
-</div>
+</div> <!---closing grid 2 tag-->
     
-<div class="footer">
+<div class="footer w3-row">
+  <div class="footer-details w3-col s12 m4 14">
     <h3> <b>Contact Us & stay in touch.</b>  </h3>
      <ul> 
        <li>
-         <i class="fa fa-phone" aria hidden="true"></i>
+         <i class="fa fa-phone" ></i>
     04 566 4584</li>
 
        <li> 
          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl"></a>
         20386sa@hvhs.school.nz </li>
        <li> 
          <i class="fa fa-instagram" aria-hidden="true"> </i>
+         <a href="https://www.instagram.com/hvhsofficial/">
          @hvhsofficial
+           </a>
        </li>
      </ul>
       <h3>
         <b>
         Media references & photographers
-        <i class="fa fa-camera" aria-hidden="true"></i>
+        <i class="fa fa-camera" ></i>
           </b>
         <br>
       </h3>
       
           for more extensive information on accomodation please visit and read up on these sites!
-  <li>
-     <a href="http://www.jyh.gr.jp/tcyh/eng/independent.html"> Tokyo central Youth Hostel, Idebashi, official website</a> 
+  
+    <ul>
+      <li>
+           <a href="http://www.jyh.gr.jp/tcyh/eng/independent.html"> Tokyo central Youth Hostel, Idebashi, official website</a> 
   </li>
          
           <li> <a href="https://osaka-yha.or.jp/shin-osaka-eng/"> Shin-Osaka Youth Hostel offcial website </a>
-
+          </li>
+             </ul>
+             </div>
          
   
-       <div class="footer-image">
-      <img id="sticker" class="footer" src="images/imgbin-line-sticker-an-election-line-sticker-hWQpmyaxHk7GSB5dJJJcSQ70g_t-removebg-preview.png">
+       <div class="footer-image w3-col s12 m4 14">
+      <img id="sticker" class="footer" src="images/imgbin-line-sticker-an-election-line-sticker-hWQpmyaxHk7GSB5dJJJcSQ70g_t-removebg-preview.png" alt="sticker">
        </div>
-    </div> <!---closing footer tag--->
-    
-    
-  </div> <!---closing container tag--->
+          <div class="w3-col s12 m4 14">
+            Thank you for using my website!
+          </div>
+   
+</div>
+    <!---closing footer tag-->
+  </div> <!---closing container tag-->
+</body>
+</html>
+
   

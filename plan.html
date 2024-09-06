@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> 
   <title> Shirin 3.4 asessment</title>
-<link href="plan.css"rel="stylesheet"type="text/css"/> 
+   <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+<link href="plan.css" rel="stylesheet" type="text/css"/> 
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 
@@ -28,14 +30,14 @@
           <b>
           Hutt Valley High School
             </b>
-          <img id="bannerimg1" src="images/hvhs.jpg" class="w3-circle">
+          <img id="bannerimg1" src="images/hvhs.jpg" class="w3-circle" alt="hvhs-logo">
         </h1>
-
+<br>
         <h1 class="two"> 
           <b>
             Suginami High School
           </b>
-          <img id="bannerimg2"     src="images/suginami.png">
+          <img id="bannerimg2"     src="images/suginami.png" alt="suginami-high-logo">
         </h1>
 
         <h2> 
@@ -44,17 +46,35 @@
           </u>
         </h2>
 
-        <div class="navbar" id="topNav">
-          
-          <a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-          
-          <a  class="active" href="plan.html"><i class="fa fa-clipboard" aria-hidden="true"></i> Plan/Itinerary</a>
+      
+    </div>
+    <div class="navbar" id="topNav">
 
-          <a href="accomodation.html"> <i class="fa fa-bed" aria-hidden="true"></i>
-      Accomodation</a>
-        </div>
+      <a href="index.html" ><i class="fa fa-home" ></i>Home</a>
+
+      <a  class="active" href="plan.html"><i class="fa fa-clipboard" ></i> Plan/Itinerary</a>
+
+      <a href="accomodation.html"> <i class="fa fa-bed"></i>
+    Accomodation</a>
     </div>
 
+    <!-- Top Navigation Menu for mobile devices-->
+    <div class="topnav"> 
+      <a href="plan.html" class="active"> <i class="fa fa-clipboard">
+          </i>Plan</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html"> <i class="fa fa-home">
+            </i>Home</a>
+        <a href="accomodation.html"> <i class="fa fa-bed">
+            </i>Accomodation</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
     <div class="container">
       <div class="grid-item1">
         <h3> <b
@@ -82,18 +102,23 @@
 
           <li> Friday 27th Sep Ghibli, Studio Museum </li>
         </ul>
-      </div>
+      </div> 
+      <!--- closing grid1 tag-->
+
       <div class="grid-item2"> 
-        <img id="torotoro" src="images/yosuke-ota-nMA2WjsmjMU-unsplash.jpg">
-         <img id="tokyoDisney" src="images/joseph-costa-17dmElzg7eQ-unsplash.jpg">
-      </div>
+        <img id="torotoro" src="images/yosuke-ota-nMA2WjsmjMU-unsplash.jpg" alt="totoro">
+         <img id="tokyoDisney" src="images/joseph-costa-17dmElzg7eQ-unsplash.jpg" alt="tokyo-disneyland">
+      </div>        
+      <!--- closing grid 2 tag-->
+
      
 
       <div class="grid-item3">
         <h3> <u>Trip plan & itinerary</u> </h3>
         <h3> 涼子の旅程</h3>
-       <table border="1">
-         <!--- 1st row with headings/dates--->
+       <table>
+         <!--- 1st row with headings/dates-->
+        <tr>
          <th> Fri 20th Sep </th>
            <th class="importantHeading"> Sat 21st Sep</th>
            <th> Sun 22nd Sep </th>
@@ -102,36 +127,50 @@
            <th> Wed 25th Sep </th>
             <th> Thurs 26th Sep </th>
             <th> Fri 27th Sep </th>
-         </tr>
-           <td> Leave Wellington and fly to Auckland. 
-           Overnight in Auckland.
-           Air NZ 448
-           Departs 17:55pm
-           Arrives
-           19:00pm
-           Accommodation Novotel, Auckland
-</td>
-         <!--- 2nd row with planned activity--->
+       </tr>
+           
+         <!--- 2nd row with planned activity-->
+         <tr>
+         <td> Leave Wellington and fly to Auckland. 
+                    Overnight in Auckland.
+                    Air NZ 448
+                    Departs 17:55pm
+                    Arrives
+                    19:00pm
+                    Accommodation Novotel, Auckland
+         </td>
            <td class="importantDate">
+             <ul>
              <li>Leave Auckland Flight NZ 9
               8:45am.</li> 
              <li>Arrive 
-              Narita, Tokyo 16:50pm Accommodation Tokyo Central Youth Hostel</li>             <a>http://www.jyh.gr.jp/tcyh/eng/index.php</a>
+              Narita, Tokyo 16:50pm Accommodation Tokyo Central Youth Hostel</li>       
+             </ul>
            </td>
            <td>
+             <ul> 
+             
              <li>Day in Tokyo
-             Sightseeing</li>
+             Sightseeing
+             </li>
+             
                <li>
              Tokyo Central Youth Hostel
                 </li>
+               </ul>
            </td>
+           
            <td>
+             <ul>
              <li>
              Day in Tokyo Sightseeing
              </li>
+             
              <li>
              Tokyo Central Youth Hostel
                </li>
+
+              </ul>
            </td> 
 
          <td>
@@ -155,7 +194,9 @@
          Sayonara party after school.
            
 </td>
-         <tr>
+             </tr>  
+         <!--- start of another row-->
+         <tr> 
             <th> Sat 28th Sep        
             </th>
            <th> Sun 29th Sep                           </th>
@@ -167,8 +208,9 @@
           <th class="importantHeading"> Fri 4th Sep </th>
          <th class="importantHeading"> Sat 5th Sep</th>
          </tr>
-
-         <tr>
+          <!--- start of another row-->
+         
+         <tr> 
            <td> Day wtih homestay family</td>
            <td> Day with homestay family</td>
            <td class= "importantDate">Travel to Osaka- Accomodation at Shini Osaka Youth Hostel</td>
@@ -177,40 +219,160 @@
            <td> Day out in Osaka</td>
            <td class="importantDate"> Return to tokyo- Depart from Narita Airport NZ90 18:35 pm</td>
            <td class ="importantDate">
+             <ul>
              <li> Arrive back in Auckland                </li>
              <li> Air NZ 429 flight back to Wellington 13:00pm</li>
+               </ul>
            </td>
 
          </tr>
-
        </table>
+         <!--- table layout for mobile devices-->
+
+
+            <table class="mobile-table">
+                 <!--- 1st row with headings/dates-->
+                <tr>
+                 <th> Fri 20th Sep </th>
+                   <th class="importantHeading"> Sat 21st Sep</th>
+                   <th> Sun 22nd Sep </th>
+                   <th> Mon 23rd Sep</th>
+        </tr>
+
+        <tr>
+               <td> Leave Wellington and fly to Auckland. 
+                            Overnight in Auckland.
+                            Air NZ 448
+                            Departs 17:55pm
+                            Arrives
+                            19:00pm
+                            Accommodation Novotel, Auckland
+                 </td>
+                   <td class="importantDate">
+                    <ul>
+                     <li>Leave Auckland Flight NZ 9
+                      8:45am.</li> 
+                     <li>Arrive 
+                      Narita, Tokyo 16:50pm Accommodation Tokyo Central Youth Hostel</li>  
+                      </ul>
+                   </td>
+                   <td>
+                     <ul>
+                     <li>Day in Tokyo
+                     Sightseeing</li>
+                       <li>
+                     Tokyo Central Youth Hostel
+                        </li>
+                       </ul>
+                   </td>
+                   <td>
+                     <ul>
+                     <li>
+                     Day in Tokyo Sightseeing
+                     </li>
+                     <li>
+                     Tokyo Central Youth Hostel
+                       </li>
+                     </ul>
+                   </td> 
+        </tr>
+        <tr>
+                 <th> Tues 24th Sep</th>
+                   <th> Wed 25th Sep </th>
+                    <th> Thurs 26th Sep </th>
+                    <th> Fri 27th Sep </th>
+        </tr>
+
+        <tr>
+                <td>
+                   Arrive at Suginami High School.
+                   Spend day at school. Meet host families at 4:30pm and go home with them.
+
+                 </td>
+
+                 <td>
+                   Disneyland with buddies.
+                 </td>
+
+                 <td>
+                   Spend day at school.
+                   Experience Japanese club activities - Shodo/Tea ceremony
+                 </td>
+
+                 <td>
+                   Trip to studio ghibli museum
+                   Day at school with buddies. 
+                 Sayonara party after school.
+
+        </td>
+        </tr>
+
+        <tr>
+            <th> Sat 28th Sep</th>
+                <th> Sun 29th Sep</th>
+                <th> Mon 30th Sep</th>
+                <th> Tues 1st Oct</th>
+
+        </tr>
+
+        <tr>
+               <td> Day wtih homestay family</td>
+                   <td> Day with homestay family</td>
+                   <td class= "importantDate">Travel to Osaka- Accomodation at Shini Osaka Youth Hostel</td>
+                   <td> Day in Osaka</td>
+        </tr>
+
+        <tr>
+            <th> Wed 2nd Oct </th>
+                <th> Thurs 3rd Oct </th>
+                <th> Friday 4th Oct </th>
+                    <th> Sat 5th Oct </th>
+        </tr>
+        <tr>
+        <td>   Day in Osaka- Cup Noodle Museum</td>
+                   <td> Day out in Osaka</td>
+                   <td class="importantDate"> Return to tokyo- Depart from Narita Airport NZ90 18:35 pm</td>
+                   <td class ="importantDate">
+                     <ul>
+                     <li> Arrive back in Auckland                </li>
+                     <li> Air NZ 429 flight back to Wellington 13:00pm</li>
+                       </ul>
+                   </td>
+        </tr>
+        </table>
+        
         <p> *Highlighted dates are reserved but not limited to travelling </p>
       
-    </div> <!--closing tag grid 3---->
-    </div> <!--closing tag for container--->
+    </div> <!--closing tag grid 3-->
+    </div> <!--closing tag for container-->
 
 
-      <div class="footer">
-        <div class="footer-details">
+      <div class="footer w3-row">
+        <div class="footer-details w3-col s12 m4 14">
        <h3> <b>Contact Us & stay in touch.</b>  </h3>
        <ul> 
          <li>
-           <i class="fa fa-phone" aria hidden="true"></i>
+           <i class="fa fa-phone"></i>
       04 566 4584</li>
 
          <li> 
-           <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          20386sa@hvhs.school.nz </li>
+           <i class="fa fa-envelope-o" ></i>
+           <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+          20386sa@hvhs.school.nz
+              </a>
+         </li>
          <li> 
-           <i class="fa fa-instagram" aria-hidden="true"> </i>
-           @hvhsofficial
+           <i class="fa fa-instagram"> </i>
+           <a href="https://www.instagram.com/hvhsofficial/">
+             @hvhsofficial
+           </a>
          </li>
        </ul>
         
         <h3>
           <b>
           Media references & photographers
-          <i class="fa fa-camera" aria-hidden="true"></i>
+          <i class="fa fa-camera" ></i>
             </b>
           <br>
         </h3>
@@ -221,19 +383,20 @@
             <li> Vista Wei</li>
           </ul>
           </div>
-         <div class="footer-image">
-        <img id="sticker" class="footer-image" src="images/imgbin-line-sticker-an-election-line-sticker-hWQpmyaxHk7GSB5dJJJcSQ70g_t-removebg-preview.png">
+
+        
+         <div class="footer-image w3-col s12 m4 14">
+        <img id="sticker" src="images/imgbin-line-sticker-an-election-line-sticker-hWQpmyaxHk7GSB5dJJJcSQ70g_t-removebg-preview.png" alt="line-sticker">
          </div>
-      </div> <!---closing footer tag--->
+        
+        <div class="w3-col s12 m4 14">
+          <p> Thank you for using this website!</p>
+          </div>
+      </div> <!---closing footer tag-->
 
-     
-
-         
-
+        
       </body>
 
         </html>
-        <script src="script.js"></script>
-  </body>
-</html>
+
   

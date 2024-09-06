@@ -5,10 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title> Shirin 3.4 asessment</title>
-  
+
+   <script src="script.js"></script>
+  <!---link to inernal stylesheet-->
   <link href="style.css" rel="stylesheet" type="text/css"/> 
-  <script src="script.js"></script>
+  
+  <!---link to w3schools style-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,7 +34,7 @@
       </b>
         <img id="bannerimg1" src="images/hvhs.jpg" class="w3-circle" alt="hvhs-logo">
       </h1>
-    
+    <br>
       <h1 class="two"> 
         <b>
         Suginami High School
@@ -38,35 +44,48 @@
       </h1>
 
       <h2> 
-      
           <u>
             2024 trip/exchange to Japan
           </u>
-          
       </h2>
   </div> <!---Closing header tag-->
   
 
       <div class="navbar" id="topNav">
-        
         <a class="active" href="index.html">
           <i class="fa fa-home">
             </i>
           Home
                 </a>
-        
         <a href="plan.html" >
           <i class="fa fa-clipboard"
-            aria-hidden="true">
+           >
             </i>
           Plan/Itinerary</a>
 
         <a href="accomodation.html">
           <i class="fa fa-bed"
-            aria-hidden="true">
+           >
           </i>
     Accomodation</a>
   </div> 
+
+  <!-- Top Navigation Menu for mobile devices-->
+  <div class="topnav"> 
+    <a href="#home" class="active"> <i class="fa fa-home">
+        </i>Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="plan.html"> <i class="fa fa-clipboard">
+          </i>Plan</a>
+      <a href="accomodation.html"> <i class="fa fa-bed">
+          </i>Accomodation</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
  
   
 <div class="container">
@@ -101,8 +120,8 @@
 </div> <!---closing tage for grid 4-->
 </div> <!--closing tag for container-->
 
-  <div class="footer">
-    <div class="footer-details">
+  <div class="footer w3-row">
+    <div class="footer-details w3-col s12 m4 14">
    <h3> <b>Contact Us & stay in touch.</b>  </h3>
    <ul> 
      <li>
@@ -111,10 +130,12 @@
      
      <li> 
        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      20386sa@hvhs.school.nz </li>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"> 20386sa@hvhs.school.nz</a>
+        
+        </li>
      <li> 
        <i class="fa fa-instagram" aria-hidden="true"> </i>
-       @hvhsofficial
+       <a href="https://www.instagram.com/hvhsofficial/">@hvhsofficial</a>
      </li>
    </ul>
   
@@ -133,17 +154,17 @@
       <li> Yosuke Ota</li>
       <li> Vista Wei</li>
     </ul>
-      <h6> <b>*all images sourced from unsplash.com</b></h6>
       </div>
-    <div class="footer-image">
+    <div class="footer-image w3-col s12 m4 14">
             <img id="sticker" src="images/imgbin-line-sticker-an-election-line-sticker-hWQpmyaxHk7GSB5dJJJcSQ70g_t-removebg-preview.png" alt="Line-sticker">
-       <p> Thank you for using this website!</p>
     </div>
-   
+    <div class="w3-col s12 m4 14">
+    <p> Thank you for using this website!</p>
+    </div>
     
        </div> <!---closing footer tag-->
     
   </body>
-    
+ 
     </html>
 

@@ -6,29 +6,6 @@ a{
   padding-right:30px; 
 }
 
-h1.one{
-  color:white;
-  text-type:bold;
-  font-family:cormorant;
-  font-size:50px;
-  padding-left:5px;
-  padding-right:5px;
-  text-align:center;
-}
-
-h1.two{
-  color:white;
-  text-type:bold;
-  font-family:cormorant;
-  font-size:50px;
-  text-align:center;
-  padding-left:5px;
-  padding:right:5px;
-}
-
-h1.grid-item1{
-  font-size:100px;
-}
 h2{
   color:white;
   font-family:bentham;
@@ -75,9 +52,7 @@ p{
  img:hover{
    filter:brightness(70%);
  }
-background-image:hover{
-  filter:saturation(70%);
-}
+
 
 
 .header{
@@ -90,33 +65,42 @@ table{
    font-size:14px;
    margin:15px;
    background-color:white;
-   align-item:center; 
  }
 
+table.mobile-table{
+  display:none;
+  font-size:14px;
+   margin:15px;
+   background-color:white;
+}
 .importantDate{
   background-color:#b6d8d8;
+}
+
+th{
+  background-color:grey;
 }
 
 .importantHeading{
   background-color:#b3b3df;
 }
-footer-details{
-  width:700px;
-  height:300px;
-}
 
-.footer-image{
- display:inline-block;
+
+div.footer-image{
+  width:500px;
+  height:350px;
+  display:inline-block;
   vertical-align: middle;
+  padding:5px;
 }
 
 /***code for responsive navbar***/
 
 .navbar{
   border: 1px solid;
-  width:150%;
+  width:100%;
   background-color:#B56E64;
-  font-style:commorant;
+  font-family:commorant;
   overflow: auto;
 }
 
@@ -135,22 +119,66 @@ footer-details{
 
 .navbar a.active{
   background-color: #7c5f71;
-   font-style:commorant;
+   font-family:commorant;
   text-decoration:underline;
-  
 }
 
+@media screen and (min-width: 600px){
+.topnav{
+  display:none;
+}
+}
 @media screen and (max-width: 600px) {
-  .navbar a {
-    float: none;
+
+  .navbar{
+    display:none;
+  }
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    font-size: 17px;
     display: block;
   }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color:#b56e64;
+    color: white;
+  }
+
 }
 
 .container{
   display:grid;
   border:1px solid;
-  grid-template:5000px/2000px/auto/2000px;
   background-color:ivory;
 }
 
@@ -178,23 +206,26 @@ footer-details{
 
 /***mobile device display***/
 @media screen and (max-width :600px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
   
-  div.container{
+  body{
     display:inline-grid;
+    width:100%;
   }
   div.header{
-    width:700px;
   }
 
   div.footer{
     grid-area:5/auto;
-    width:700px;
+    width:100%;
   }
 
   
   div.grid-item1{
     grid-area:1/auto;
-    text-size:500px;
     text-align:center;
   }
 
@@ -213,24 +244,57 @@ footer-details{
     font-size:30px;
   }
   .footer{
-    display:container
-    grid-area:5/auto;;
+    grid-area:5/auto;
   }
-  
-  div.contact-details{
-    text-align:center;
+  td{
+    width:30px;
   }
-  
-  div.footer-content{
-   align:right;
+
+  th{
+    width:30px;
+  }
+table{
+  display:none;
+  border:1px;
 }
+  table.mobile-table{
+    display:inline;
+    font-size:14px;
+     margin:15px;
+     background-color:white;
+  }
+
+  td{
+    background-color:white;
+  }
+
+  th{
+    background-color:grey;
+  }
    #bannerimg1{
      display:none;
     }
     #bannerimg2{
      display:none;
     }
-
+li{
+  font-size:20px;
 }
- 
-  
+}
+
+@media screen and (max-width:1000px) {
+  display:inline-grid;
+ #torotoro{
+   width:250px;
+   height:350px;
+   transition:filter 1s;
+   padding:5px;
+ }
+
+#tokyoDisney{
+  width:300;
+  height:450;
+  transition:filter 1s;
+  padding:5px;
+}
+}
